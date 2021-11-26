@@ -1,6 +1,17 @@
 # Databricks notebook source
-# MAGIC %run bootstrap
+# MAGIC %run ./app/bootstrap
 
 # COMMAND ----------
 
-from daipeproject.test_module import print_hello
+# MAGIC %load_ext autoreload
+# MAGIC %autoreload 2
+
+# COMMAND ----------
+
+from daipeproject.test_modelu import print_hello
+
+print_hello()
+
+# COMMAND ----------
+
+print_hello()
